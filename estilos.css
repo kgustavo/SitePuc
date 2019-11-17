@@ -1,5 +1,4 @@
 body {
-    cursor: default;
 	margin: 0;
 	margin-top: 0;
 	padding: 0;
@@ -13,10 +12,6 @@ body {
 }
 
 
-.cadeado {
-	padding-top:76px;
-	width: 100%;
-}
 
 .dados{
 	color: #FFFFFF;
@@ -53,6 +48,27 @@ body {
     
 }
 
+.ilu1 {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+	width: 50%;
+}
+
+.ilu2 {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+	width: 70%;
+}
+
+.ilu3 {
+    position: absolute;
+    left: 30%;
+    top: 55%;
+	width: 70%;
+}
+
 .menul {
 	padding-left: 20px;
 	padding-top: 10px;
@@ -83,7 +99,7 @@ body {
 .menu-lateral {
 	background: #012F34;
 	padding-top: 133px;
-	height: 1080px;
+	height: 1010px;
 }
 
 .menu-lateral-l {
@@ -130,6 +146,7 @@ body {
 .subtexto {
 	font-size: 20px;
 	padding-top: 70px;
+   
 }
 
 .texto {
@@ -137,7 +154,7 @@ body {
 	font-family: Georgia;
 	font-size: 43px;
 	padding-left: 100px;
-	
+
 }
 
 
