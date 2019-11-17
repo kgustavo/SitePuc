@@ -26,21 +26,20 @@
 	<meta name="theme-color" content="#ffffff">
 	
 </head>
-<body>
+<body class="dragscroll">
 
-<div class="header row">	
+<div class="header row" id="header">	
 		  <div class="col-6 logo col-xl-2">
-			    <img src="logosite.png" class="logo">
+			    <img src="img/logosite.png" class="logo">
 		  </div>
 		  <div class="col-6 lista xl-9 col-xl-2  offset-xl-8">
 				<a class="menul" href="#">home</a>
-				<a class="menul" href="#">about</a>
+				<a class="menul" href="#secondPage">about</a>
 				<a class="menul" href="#">help</a>
 		  </div>	
 </div>
 
 <div id="fullpage">
-	
     <div class="section active" id="section0">
     	
 
@@ -83,9 +82,6 @@
 		<div class="row parte2">
 		
 		<div class="col-6 menu-lateral col-xl-3">
-			<div>
-				<img src="logosite.png" class="logo-lateral">
-			</div>
 		<div class="col-6 lista-lateral col-xl-6 offset-xl-2">
 			
 		  <a class="menu-lateral-l" href="#"><p class="menul-1">home</p></a>
@@ -102,12 +98,11 @@
 			
 		</div>
 	  <h1>O que são dados?</h1>
-		
 		<div class="subtexto row"> 
 		  <p class="col-xl-5">Um dado é o registro do atributo de um ente, objeto ou fenômeno onde registro indica o ato de registrar, ou seja, é a gravação ou a impressão de caracteres ou símbolos que tenham um significado em algum documento ou suporte físico. A palavra Dado vem do latim Datum que usado como substantivo significa "presente" no sentido de algo que foi oferecido ou dado. </p>
 		  <p class="col-xl-7"><b> </b></p>
-		  <p class="col-xl-5">Existem dois tipos de dados: estruturados e não estruturados. Os dados estruturados, que são dados formatados, organizados em tabelas - linhas e colunas - e são facilmente processados. geralmente é utilizado um sistema gerenciador de banco de dados para armazenar esse tipo de dado, um exemplo são os dados gerados por aplicações empresariais. Os dados não estruturados não possuem uma formatação específica e são mais difíceis de serem processados. Por exemplo, mensagens de email, imagens, documentos de texto, mensagens em redes sociais.</p>
-			<div class="col-6 offset-xl-0 col-xl-7"><img src="vetores.png" class="cadeado"></div>
+		  <p class="col-xl-5"></p>
+			<div class="col-6 offset-xl-0 col-xl-7"><img src="img/vetores.png" class="cadeado"></div>
 	  </div>
 		
   </div>
@@ -126,15 +121,31 @@
 
 <script src="fullPage.js-master/vendors/easings.min.js"></script>
 <script src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+<script src="fullPage.js-master/dist/fullpage.dragAndMove.min.js"></script>
+<script src="fullPage.js-master/dist/fullpage.extensions.min.js"></script>
 
 <script src="fullPage.js-master/src/fullpage.js"></script>
 <script>
     var myFullpage = new fullpage('#fullpage', {
+        dragAndMoveKey: 'a2d1c3Rhdm8uZ2l0aHViLmlvX1dNeFpISmhaMEZ1WkUxdmRtVT1ZZDI=',
+        dragAndMove: true,
         sectionsColor: ['#012F34', '#FFFFF', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
         menu: '#menu',
-        lazyLoad: true
+        lazyLoad: true,
+        showActiveTooltip: true,
+        scrollBar: true,
+        keyboardScrolling: true,
+        controlArrows: true,
+        recordHistory: true,
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltip: true,
     });
 </script>
+    
+    
+
+    
+
 </body>
 </html>
