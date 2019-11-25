@@ -1,12 +1,13 @@
 <!DOCTYPE html><html lang=pt>
 <head>
-    <meta charset="utf-8"/>
-	
 	<title>Projeto Site Puc</title>
+    <meta charset="utf-8"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	
 	<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -34,9 +35,9 @@
 			    <img src="img/logosite.png" class="logo" alt="logo do site">
 		  </div>
 		  <div class="col-6 lista xl-9 col-xl-2  offset-xl-8">
-				<a class="menul" href="#firstPage">Inicio</a>
-				<a class="menul" href="#secondPage">Sobre</a>
-				<a class="menul" href="#">Ajuda</a>
+				<a class="menul" href="#Home">Inicio</a>
+				<a class="menul" href="#Dados">Sobre</a>
+				<a class="menul" href="help.html">Ajuda</a>
 		  </div>	
 </div>
 
@@ -49,8 +50,8 @@
                 <div class="col- cover intro">
 	
 					<div class="titulo">
-						<h1 class="dados">Seus dados são</h1>
-						<h1 class="dados2">Sua Propriedade</h1>
+						<p class="dados">Seus dados são</p>
+						<p class="dados2">Sua Propriedade</p>
 					</div>
 
 				</div>	
@@ -60,8 +61,8 @@
             <div class="col- cover">
 	
 					<div class="titulo">
-						<h1 class="dados">Empresas estão te</h1>
-						<h1 class="dados2">Espionando</h1>
+						<p class="dados">Empresas estão te</p>
+						<p class="dados2">Espionando</p>
 					</div>
 
 				</div>	
@@ -70,8 +71,8 @@
             <div class="col- cover">
 	
 					<div class="titulo">
-						<h1 class="dados">Não seja mais uma</h1>
-						<h1 class="dados2">Vítima de vazamentos</h1>
+						<p class="dados">Não seja mais uma</p>
+						<p class="dados2">Vítima de vazamentos</p>
 					</div>
 
 				</div>	
@@ -82,20 +83,20 @@
 	<div class="section active" id="section1">
 		<div class="row parte2">
 		
-		<div class="col-6 menu-lateral col-xl-3">
-		<div class="col-6 lista-lateral lista col-xl-6 offset-xl-2">
+		<div data-aos="fade-right" data-aos-offset="100" class="col-6 menu-lateral col-xl-3">
+		  <div class="col-6 lista-lateral lista col-xl-6 offset-xl-2">
 			
-		  <a class="menu-lateral-l" href="#secondPage"><p class="menul-1" style="font-weight: 500">Dados</p></a>
-		  <a class="menu-lateral-l" href="#3rdPage"><p class="menul-2">Rastreamento</p></a>
-		  <a class="menu-lateral-l" href="#4thpage"><p class="menul-3">Uso</p></a>
+		      <a class="menu-lateral-l" href="#Dados"><p class="menul-1" style="font-weight: 500">Dados</p></a>
+		      <a class="menu-lateral-l" href="#Rastreamento"><p class="menul-2">Rastreamento</p></a>
+		      <a class="menu-lateral-l" href="#Uso"><p class="menul-3">Uso</p></a>
 	
-		</div>
-			  </div>
+		  </div>
+        </div>
 				
 	<div class="col-6 texto offset-xl-0 col-xl-9"> 
 		
 	  <div class="topico">
-		  <h2 class="col-xl-2 text-center"> Dados </h2>
+		  <span>Dados</span>
 			
 		</div>
 	  <div class="col-cl-5"><h1>O que são dados?</h1></div>
@@ -116,12 +117,12 @@
     	<div class="section active" id="section2">
 		<div class="row parte2">
 		
-		<div class="col-6 menu-lateral col-xl-3">
+		<div data-aos="fade-right" data-aos-offset="100" class="col-6 menu-lateral col-xl-3">
 		<div class="col-6 lista-lateral lista col-xl-6 offset-xl-2">
 			
-		  <a class="menu-lateral-l" href="#secondPage"><p class="menul-1">Dados</p></a>
-		  <a class="menu-lateral-l" href="#3rdPage"><p class="menul-2" style="font-weight: 500">Rastreamento</p></a>
-		  <a class="menu-lateral-l" href="#4thpage"><p class="menul-3">Uso</p></a>
+		  <a class="menu-lateral-l" href="#Dados"><p class="menul-1">Dados</p></a>
+		  <a class="menu-lateral-l" href="#Rastreamento"><p class="menul-2" style="font-weight: 500">Rastreamento</p></a>
+		  <a class="menu-lateral-l" href="#Uso"><p class="menul-3">Uso</p></a>
 	
 		</div>
 			  </div>
@@ -129,7 +130,7 @@
 	<div class="col-6 texto offset-xl-0 col-xl-9"> 
 		
 	  <div class="topico">
-		  <h2 class="col-xl-4 text-center"> Rastreamento </h2>
+		  <span>Rastreamento</span>
 			
 		</div>
 	  <div class="col-cl-5"><h1>Como empresas te monitoram</h1></div>
@@ -151,12 +152,12 @@
     	<div class="section active" id="section3">
 		<div class="row parte2">
 		
-		<div class="col-6 menu-lateral col-xl-3">
+		<div data-aos="fade-right" data-aos-offset="100" class="col-6 menu-lateral col-xl-3">
 		<div class="col-6 lista-lateral lista col-xl-6 offset-xl-2">
 			
-		  <a class="menu-lateral-l" href="#secondPage"><p class="menul-1">Dados</p></a>
-		  <a class="menu-lateral-l" href="#3rdPage"><p class="menul-2">Rastreamento</p></a>
-		  <a class="menu-lateral-l" href="#4thpage"><p class="menul-3" style="font-weight: 500">Uso</p></a>
+		  <a class="menu-lateral-l" href="#Dados"><p class="menul-1">Dados</p></a>
+		  <a class="menu-lateral-l" href="#Rastreamento"><p class="menul-2">Rastreamento</p></a>
+		  <a class="menu-lateral-l" href="#Uso"><p class="menul-3" style="font-weight: 500">Uso</p></a>
 	
 		</div>
 			  </div>
@@ -164,7 +165,7 @@
 	<div class="col-6 texto offset-xl-0 col-xl-9"> 
 		
 	  <div class="topico">
-		  <h2 class="col-xl-2 text-center"> Uso </h2>
+		  <span>Uso</span>
 			
 		</div>
 	  <div class="col-cl-5"><h1>Como usam seus dados</h1></div>
@@ -189,7 +190,10 @@
 	
 	
 	
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 <script src="fullPage.js-master/vendors/easings.min.js"></script>
 <script src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
 <script src="fullPage.js-master/dist/fullpage.dragAndMove.min.js"></script>
@@ -200,7 +204,7 @@
         dragAndMove: true,
         dragAndMoveKey: 'a2d1c3Rhdm8uZ2l0aHViLmlvX1dNeFpISmhaMEZ1WkUxdmRtVT1ZZDI=',
         sectionsColor: ['#012F34', 'whitesmoke', 'whitesmoke', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        anchors: ['Home', 'Dados', 'Rastreamento', 'Uso'],
         menu: '#menu',
         lazyLoad: true,
         showActiveTooltip: true,
@@ -210,6 +214,12 @@
         recordHistory: true,
         navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: true,
+        responsiveHeight: 600,
+        responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+    }
+        
+        
     });
 </script>
     
